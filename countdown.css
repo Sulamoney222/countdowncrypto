@@ -1,0 +1,219 @@
+
+:root{
+    --clr-primary-1:black;
+    --clr-primary-2:white;
+}
+
+body{
+   background: linear-gradient(to right, black, rgb(99, 65, 1)), rgb(243, 242, 242);
+    color: var(--clr-primary-2);
+    
+
+}
+header {
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-primary-2);
+    transform: translateY(-10%);
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -7px;
+    border-bottom: 1px solid var(--clr-primary-2);
+
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+
+}
+
+li {
+    margin-left: 10px;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary-2);
+    font-size: 13px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+a:hover {
+    color: var(--clr-primary-4);
+}
+
+.explore {
+    margin-left: 30px;
+    padding: 7px 7px 7px 7px;
+    background: var(--clr-primary-2);
+    border: 1px solid var(--clr-primary-1);
+    border-radius: 5px;
+    color: var(--clr-primary-1);
+    cursor: pointer;
+}
+.explore:hover{
+    box-shadow: 0px 0px 20px var(--clr-primary-2);
+    cursor: pointer;
+    padding: 9px 9px 9px 9px;
+    transition: 0.5s;
+}
+
+
+.top{
+    font-size: 23px;
+    animation: 1.5s slideBottom ease;
+}
+.coming-soon{
+display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 8%;
+  
+}
+.all-count{
+   width: 100%;
+   padding: 15px 0;
+   background: transparent;  
+   display: flex;
+   backdrop-filter: blur(2px);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        border-bottom-right-radius: 35px;
+}
+.count{
+    background: url(trade3.avif);
+    border: 1px solid var(--clr-primary-2);
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    overflow: hidden;  
+    animation: 1.5s slideTop ease;
+}
+.crypto{
+    width: 10ch;
+    border-radius: 50px;
+}
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#container{
+    text-align: center;
+    background: var(--clr-primary-1);
+    width: 20%;
+    padding: 6px 6px 6px 6px;
+    margin-right: 10px;
+    border-radius: 7px;
+    text-decoration: line-through black;
+   
+}
+#container h4{
+    transform: translateY(80%);
+}
+
+.lorem{
+    font-size: 12px;
+    color: rgb(158, 153, 153);
+}
+.token{
+    letter-spacing: 1px;
+}
+.token-color{
+    color: red;
+}
+.reduction{
+    color: yellow;
+}
+.container h4{
+    background: white;
+    color: var(--clr-primary-1);
+    padding: 5px 0;
+}
+
+.trade{
+    width: 80ch;
+    height: 50ch;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle li,
+.footer-right li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-middle a,
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-middle a:hover,
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+@keyframes slideBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+@keyframes slideTop {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
